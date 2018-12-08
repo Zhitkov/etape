@@ -7,7 +7,7 @@ function Drop() {
 
   this.fall = function() {
     this.y = this.y + this.yspeed;
-    this.x +=  mouseX/1000;
+    // this.x +=  mouseX/1000;
     var grav = map(this.z, 0, 20, 0, 20);
     this.yspeed = grav - mouseY/100;
 

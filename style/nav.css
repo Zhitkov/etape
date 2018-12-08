@@ -28,6 +28,7 @@
  span, a, p{
    text-decoration: none;
     color: black;
+    
  }
  img{
     object-fit: cover;
@@ -35,9 +36,13 @@
   .navbar-logo{
     justify-content: center;
     display: flex;
+    flex-direction: column;
   }
   .nav{
     -webkit-flex-wrap: nowrap;
         -ms-flex-wrap: nowrap;
             flex-wrap: nowrap;
+  }
+  span > a {
+        font-size: 28px;
   }

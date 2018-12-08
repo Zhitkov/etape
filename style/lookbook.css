@@ -19,12 +19,12 @@
     position: fixed;
     left: 0px;
     right: 0px;
-    top: 100px;
+    top: 0px;
     bottom: 100px;
     /*z-index: 1;*/
 }
 .photo-section{
-  margin: 14% 0;
+  margin: 12% 0;
 }
 .navbar-ul{
   display: flex;

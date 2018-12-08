@@ -9,6 +9,11 @@
 	<link rel="stylesheet" type="text/css" href="style/font.css">
 	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
 	<title>Etape - Shop</title>
+	<style type="text/css">
+		html {
+  scroll-behavior: smooth;
+}
+	</style>
 </head>
 <body>
 	<section class="navbar">
@@ -16,8 +21,8 @@
     	<!-- <div class="mbr-overlay" style="opacity: 0.9;"></div> -->
         <div class="brand-container">
             <div class="centr">
-                <div class="navbar-logo"><span>
-                    <a href="index.html">
+                <div class="navbar-logo"><span class="navbar-logo">
+                    <a href="index.html" style="justify-content: center; display: flex;">
                         <img src="images/drawing.svg" alt="etape" title="" style="height: 3.8rem;">
                     </a></span>
                 <span class="navbar-logo-name"><a href="index.html">etape</a></span>
@@ -26,7 +31,7 @@
         </div>
         <div class="centr nav">
                 <span>
-	                <a class="nav-link" href="index.html">Главная</a>
+	                <a class="nav-link" href="lookbook.html">Главная</a>
                 </span>
                 <span>
 	                <a class="nav-link" href="shop.html">Одежда</a>
@@ -41,7 +46,9 @@
 	<section class="shop centr">
 		<div class="cloth">
 			<div class="prime-img">
-				<img src="images/etape.jpg" alt="">
+				<div>
+					<img src="images/etape.jpg" alt="">
+				</div>
 			</div>
 			<div class="desk">
 				<p>Название</p>
@@ -49,24 +56,24 @@
 				<p>Название</p>
 				<p>Название 1</p>
 			</div>
-			<div class="text">
+<!-- 			<div class="text">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			</div>
+			</div> -->
 			<div class="grid-img-container">
-				<img src="images/rectangle.svg" alt="" class="grid-img" onclick="changePhoto(this);">
-				<img src="images/triangle.svg" alt="" class="grid-img"onclick="changePhoto(this);">
-				<img src="images/drawing.svg" alt="" class="grid-img"onclick="changePhoto(this);">
-				<img src="images/circle.svg" alt="" class="grid-img"onclick="changePhoto(this);">
+				<img src="images/1.jpg" alt="" class="grid-img" onclick="changePhoto(this);">
+				<img src="images/2.jpg" alt="" class="grid-img"onclick="changePhoto(this);">
+				<img src="images/3.jpg" alt="" class="grid-img"onclick="changePhoto(this);">
+				<img src="images/4.jpg" alt="" class="grid-img"onclick="changePhoto(this);">
 				<img src="images/etape.jpg" alt="" class="grid-img"onclick="changePhoto(this);">
-				<img src="images/rectangle.svg" alt="" class="grid-img"onclick="changePhoto(this);">
+				<img src="images/5.jpg" alt="" class="grid-img"onclick="changePhoto(this);">
 			</div>
 			<div class="centr button">
-				<span><a href="#">Заказать</a></span>
+				<span><a href="shop.html#model">Заказать</a></span>
 			</div>
 		</div>
 
@@ -75,15 +82,15 @@
 
 		<div class="cloth">
 			<div class="prime-img">
-				<img src="images/etape.jpg" alt="">
+				<div>
+					<img src="images/etape.jpg" alt="">
+				</div>
 			</div>
 			<div class="desk">
 				<p>Название</p>
 				<p>Название 1</p>
 				<p>Название</p>
 				<p>Название 1</p>
-			</div>
-			<div class="text">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -91,18 +98,26 @@
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			</div>
+<!-- 			<div class="text">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div> -->
 			<div class="grid-img-container">
-				<img src="images/rectangle.svg" alt="" class="grid-img "onclick="changePhoto(this);">
-				<img src="images/triangle.svg" alt="" class="grid-img "onclick="changePhoto(this);">
-				<img src="images/drawing.svg" alt="" class="grid-img "onclick="changePhoto(this);">
-				<img src="images/circle.svg" alt="" class="grid-img "onclick="changePhoto(this);">
-				<img src="images/etape.jpg" alt="" class="grid-img "onclick="changePhoto(this);">
-				<img src="images/rectangle.svg" alt="" class="grid-img "onclick="changePhoto(this);">
+				<img src="images/1.jpg" alt="" class="grid-img" onclick="changePhoto(this);">
+				<img src="images/2.jpg" alt="" class="grid-img"onclick="changePhoto(this);">
+				<img src="images/3.jpg" alt="" class="grid-img"onclick="changePhoto(this);">
+				<img src="images/4.jpg" alt="" class="grid-img"onclick="changePhoto(this);">
+				<img src="images/etape.jpg" alt="" class="grid-img"onclick="changePhoto(this);">
+				<img src="images/5.jpg" alt="" class="grid-img"onclick="changePhoto(this);">
 			</div>
 			<div class="button centr">
 				<!-- <a href="#"><span>button</span></a> -->
 				<span>
-					<a href="#">Заказать</a>
+					<a href="shop.html#model">Заказать</a>
 				</span>
 			</div>
 		</div>
@@ -112,7 +127,9 @@
 		
 		<div class="cloth">
 			<div class="prime-img">
-				<img src="images/etape.jpg" alt="">
+				<div>
+					<img src="images/etape.jpg" alt="">
+				</div>
 			</div>
 			<div class="desk">
 				<p>Название</p>
@@ -120,32 +137,33 @@
 				<p>Название</p>
 				<p>Название 1</p>
 			</div>
-			<div class="text">
+<!-- 			<div class="text">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			</div>
+			</div> -->
 			<div class="grid-img-container">
-				<img src="images/rectangle.svg" alt="" class="grid-img " onclick="changePhoto(this);">
-				<img src="images/triangle.svg" alt="" class="grid-img "onclick="changePhoto(this);">
-				<img src="images/drawing.svg" alt="" class="grid-img "onclick="changePhoto(this);">
-				<img src="images/circle.svg" alt="" class="grid-img "onclick="changePhoto(this);">
-				<img src="images/etape.jpg" alt="" class="grid-img "onclick="changePhoto(this);">
-				<img src="images/rectangle.svg" alt="" class="grid-img "onclick="changePhoto(this);">
+				<img src="images/1.jpg" alt="" class="grid-img" onclick="changePhoto(this);">
+				<img src="images/2.jpg" alt="" class="grid-img"onclick="changePhoto(this);">
+				<img src="images/3.jpg" alt="" class="grid-img"onclick="changePhoto(this);">
+				<img src="images/4.jpg" alt="" class="grid-img"onclick="changePhoto(this);">
+				<img src="images/etape.jpg" alt="" class="grid-img"onclick="changePhoto(this);">
+				<img src="images/5.jpg" alt="" class="grid-img"onclick="changePhoto(this);">
 			</div>
 			<div class="button centr">
 				<!-- <a href="#"><span>button</span></a> -->
-				<span><a href="#">Заказать</a></span>
+				<span><a href="shop.html#model">Заказать</a></span>
 			</div>
 		</div>
 
 	</section>
-	<section class="get-in-touch">
+<section class="get-in-touch">
+	<div>
    <h1 class="title">Форма связи</h1>
-   <form class="contact-form row">
+   <form class="contact-form row" action="https://formspree.io/zhitkov100@gmail.com" method="POST">
       <div class="form-field col x-50">
          <input id="name" class="input-text js-input" type="text" required>
          <label class="label" for="name">Имя</label>
@@ -160,16 +178,24 @@
       </div>
       <div class="form-field col x-100">
          <input id="message" class="input-text js-input" type="text" required>
-         <label class="label" for="message">Сообщение</label>
+         <label class="label" for="message">Адрес доставки</label>
       </div>
       <div class="form-field col x-100 align-center">
-         <input class="submit-btn" type="submit" value="Отправить">
+         <input class="submit-btn" type="submit" value="Отправить" >
       </div>
    </form>
+   </div>
 </section>
 <script type="text/javascript" src="script/shop.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">
-	
+	$( '.js-input' ).keyup(function() {
+  if( $(this).val() ) {
+     $(this).addClass('not-empty');
+  } else {
+     $(this).removeClass('not-empty');
+  }
+});
 </script>
 </body>
 </html>

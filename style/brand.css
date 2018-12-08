@@ -1,5 +1,4 @@
 @-webkit-keyframes animation{from{opacity:0;} to{ }}
-@-webkit-keyframes animation2{from{opacity:1;} to{opacity:0}}
 
 body {
     background-color: #fff;
@@ -96,7 +95,7 @@ canvas{
 
 .brand-info{
   position: absolute;
-  top: 100vh;
+  top: 90vh;
   display: grid;
   /*grid-template: none | repeat(3, 1fr) / 1fr, 1fr;*/
   grid-template-areas: 
@@ -106,7 +105,7 @@ canvas{
     "video-1 video-1"
     "back back";
   width: 90vw;
-  margin-left: 5vw;
+  margin: 10vh 5vw;
 }
 .text-1{
   grid-area: text-1;
@@ -122,18 +121,18 @@ canvas{
 }
 .img-1{
   grid-area: img-1;
-  width:50px;
-  height: 50px;
+  width:125px;
+  height: 110px;
 }
 .img-2{
   grid-area: img-2;
-  width:50px;
-  height: 50px;
+  width:100px;
+  height: 100px;
 }
 .img-3{
   grid-area: img-3;
-  width:50px;
-  height: 50px;
+  width:100px;
+  height: 100px;
 }
 .video-1{
   grid-area: video-1;

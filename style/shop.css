@@ -1,12 +1,14 @@
+@-webkit-keyframes animation{from{opacity:0;} to{ }}
+
 .cloth{
   display: grid;
   grid-template-areas:
     "prime-img desk"
-    "text text"
+    /*"text text"*/
     "grid-img button";
   width: 78vw;
   height: 80vh;
-  margin: 11vh 20vw;
+  margin: 15vh 20vw;
 }
 @media (max-width: 666px){
   .cloth{
@@ -20,20 +22,20 @@
             justify-content: flex-start;
   }
 }
-.text{
+/*.text{
   grid-area: text;
   text-align: left;
   margin-left: 50px;
   
-}
+}*/
 .desk{
   grid-area: desk;
   min-width: 20vw;
 }
 .prime-img{
   grid-area: prime-img;
-  width: 80%;
   object-fit: cover;
+  display: flex;
   -webkit-justify-content: center;
           justify-content: center;
   margin: 0 10%;
@@ -67,8 +69,14 @@ img{
   display: grid;
   grid-template-columns: repeat(3, 100px);
   grid-template-rows: repeat(3, 100px);
-  margin-left: 50px;
+  -webkit-justify-content: center;
+          justify-content: center;
+  grid-gap: 1rem;
+  margin: 10px;
 }
 .get-in-touch{
   margin: 0 25vh;
+}
+body{
+    -webkit-animation:animation ease 1s;animation-delay:1s;animation-fill-mode:backwards;
 }
