@@ -1,0 +1,43 @@
+    .centr{
+    display: flex; 
+    justify-content: space-around; 
+    align-self: center;
+    
+  }
+  .centr>span:first-child{
+  margin-left: 35%;
+}
+ .centr>span:last-child{
+   margin-right: 35%;
+ }
+ .centr>span:nth-child(2){
+   margin: 0 10px
+ }
+.navbar{
+  position: fixed;
+  width: 100vw;
+  z-index: 999;
+  background-color: #ffffffa0;
+  top: 0;
+}
+.navbar-logo-name{
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+ span, a, p{
+   text-decoration: none;
+    color: black;
+ }
+ img{
+    object-fit: cover;
+  }
+  .navbar-logo{
+    justify-content: center;
+    display: flex;
+  }
+  .nav{
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+  }

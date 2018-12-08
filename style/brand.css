@@ -1,0 +1,157 @@
+@-webkit-keyframes animation{from{opacity:0;} to{ }}
+@-webkit-keyframes animation2{from{opacity:1;} to{opacity:0}}
+
+body {
+    background-color: #fff;
+    background-size: 100%;
+    background-image: -webkit-color(#fff);
+    background-image: -moz-color(#fff);
+    background-image: -ms-color(#fff);
+    background-image: -o-color(#fff);
+    text-align: center;
+    margin: 0px;
+    overflow: hidden;
+    overflow-y: scroll;
+    -webkit-animation:animation ease 1s;animation-delay:1s;animation-fill-mode:backwards;
+    
+    
+}
+.brand-container{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  z-index: 2;
+}
+canvas{
+  position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 100px;
+    z-index: -1;
+    -webkit-animation:animation ease 1s;animation-delay:1.5s;animation-fill-mode:backwards;
+}
+.figure{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-wrap: nowrap;
+}
+/*.brand-info{
+  top: 80vh;
+  position: absolute;
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  padding-left: 25vw;
+  z-index: 2;
+}
+
+@media (max-width: 468px){
+  .brand-info{
+    width: 100vw;
+    padding-left: 0;
+    top: 110vh;
+  }
+}
+.text-container{
+  display: flex;
+  flex-direction: row;
+}
+.text-figure{
+  margin: 0 50px;
+  width: 50px;
+}
+.text-right{
+  text-align: right;
+}
+.text-left{
+  text-align: left;
+}
+@media (max-width: 480px){
+  .text-container{
+    font-size: 10px
+  }
+}
+@media (max-width: 920px){
+  .text-container{
+    font-size: 15px
+  }
+  .brand-info{
+    margin-right: 2vw;
+    padding-left: 0vw;
+    width: 100vw;
+    width: 97vw;
+  }
+}*/
+
+.brand-info{
+  position: absolute;
+  top: 100vh;
+  display: grid;
+  /*grid-template: none | repeat(3, 1fr) / 1fr, 1fr;*/
+  grid-template-areas: 
+    "text-1 img-1"
+    "img-2 text-2"
+    "text-3 img-3"
+    "video-1 video-1"
+    "back back";
+  width: 90vw;
+  margin-left: 5vw;
+}
+.text-1{
+  grid-area: text-1;
+  text-align: left;
+}
+.text-2{
+  grid-area: text-2;
+  text-align: right;
+}
+.text-3{
+  grid-area: text-3;
+  text-align: left;
+}
+.img-1{
+  grid-area: img-1;
+  width:50px;
+  height: 50px;
+}
+.img-2{
+  grid-area: img-2;
+  width:50px;
+  height: 50px;
+}
+.img-3{
+  grid-area: img-3;
+  width:50px;
+  height: 50px;
+}
+.video-1{
+  grid-area: video-1;
+}
+.back{
+  grid-area: back;
+  height: 50px;
+}
+.centr, span{
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-self: center;
+          align-self: center;
+}
+.img-container{
+  display: flex;
+  justify-content: center;
+  -ms-align-self: center;
+  align-self: center;
+}

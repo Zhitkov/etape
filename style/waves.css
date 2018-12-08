@@ -1,0 +1,48 @@
+@-webkit-keyframes animation{from{opacity:0; -webkit-transform:scale(1.2) rotateX(45deg);transform:scale(1.2) rotateX(45deg);} to{ }}
+
+body {
+    background-color: #fff;
+    background-size: 100%;
+    background-image: -webkit-color(#fff);
+    background-image: -moz-color(#fff);
+    background-image: -ms-color(#fff);
+    background-image: -o-color(#fff);
+    text-align: center;
+    margin: 0px;
+    overflow: hidden;
+    overflow-y: scroll;
+    -webkit-animation:animation ease 1s;animation-delay:1s;animation-fill-mode:backwards;
+}
+.brand-container{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  z-index: 2;
+}
+#defaultCanvas0{
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 100px;
+    bottom: 100px;
+    z-index: 1;
+}
+.figure{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-wrap: nowrap;
+}
+@media (max-width: 468px){
+  .brand-info{
+    width: 100vw;
+    padding-left: 0;
+    top: 110vh;
+  }
+}
+

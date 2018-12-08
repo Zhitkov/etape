@@ -1,0 +1,74 @@
+.cloth{
+  display: grid;
+  grid-template-areas:
+    "prime-img desk"
+    "text text"
+    "grid-img button";
+  width: 78vw;
+  height: 80vh;
+  margin: 11vh 20vw;
+}
+@media (max-width: 666px){
+  .cloth{
+    margin: 11vh 0;
+  }
+  .text{
+      margin-left: 0;
+  }
+  .shop{
+    -webkit-justify-content: flex-start;
+            justify-content: flex-start;
+  }
+}
+.text{
+  grid-area: text;
+  text-align: left;
+  margin-left: 50px;
+  
+}
+.desk{
+  grid-area: desk;
+  min-width: 20vw;
+}
+.prime-img{
+  grid-area: prime-img;
+  width: 80%;
+  object-fit: cover;
+  -webkit-justify-content: center;
+          justify-content: center;
+  margin: 0 10%;
+}
+img{
+  max-width: 300px;
+}
+.grid-img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover
+  }
+.button{
+  grid-area: button;
+}
+.centr{
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-self: center;
+          align-self: center;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      
+}
+.grid-img-container{
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  margin-left: 50px;
+}
+.get-in-touch{
+  margin: 0 25vh;
+}
