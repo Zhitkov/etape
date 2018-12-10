@@ -204,7 +204,6 @@
       email = document.getElementById('inputEmail');
       message = document.getElementById('inputMessage');
       if (!name.value || !email.value || !message.value) {
-        alertify.error('Please check your entries');
         return false;
       } else {
         $.ajax({
@@ -215,7 +214,7 @@
         });
         e.preventDefault();
         $(this).get(0).reset();
-        return alertify.success('Message sent');
+        return alert('Message sent');
       }
     });
   });
