@@ -15,7 +15,7 @@ body {
     
     
 }
-.brand-container{
+/*.brand-container{
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -25,7 +25,7 @@ body {
   flex-wrap: nowrap;
   flex-direction: column;
   z-index: 2;
-}
+}*/
 canvas{
   position: fixed;
     left: 0px;
@@ -94,22 +94,30 @@ canvas{
 }*/
 
 .brand-info{
-  position: absolute;
-  top: 90vh;
   display: grid;
   /*grid-template: none | repeat(3, 1fr) / 1fr, 1fr;*/
   grid-template-areas: 
-    "text-1 img-1"
-    "img-2 text-2"
-    "text-3 img-3"
-    "video-1 video-1"
-    "back back";
-  width: 90vw;
-  margin: 10vh 5vw;
+    "text-1 video-1 text-3"
+    ". text-2 .";
+  margin: 20vh 5vw;
+}
+@media (max-width: 800px){
+    .brand-info{
+    display: grid;
+    /*grid-template: none | repeat(3, 1fr) / 1fr, 1fr;*/
+    grid-template-areas: 
+      "text-1"
+      "text-2"
+      "text-3"
+      "video-1";
+    margin: 20vh 5vw;
+  }
 }
 .text-1{
   grid-area: text-1;
-  text-align: left;
+}
+.text-center{
+  text-align: center;
 }
 .text-2{
   grid-area: text-2;
@@ -120,17 +128,14 @@ canvas{
   text-align: left;
 }
 .img-1{
-  grid-area: img-1;
   width:125px;
   height: 110px;
 }
 .img-2{
-  grid-area: img-2;
   width:100px;
   height: 100px;
 }
 .img-3{
-  grid-area: img-3;
   width:100px;
   height: 100px;
 }
