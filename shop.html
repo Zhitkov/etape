@@ -163,7 +163,7 @@
 <section class="get-in-touch">
 	<div>
    <h1 class="title">Форма связи</h1>
-   <form id="contact-form" class="contact-form row">
+   <form id="contact-form" class="contact-form row" action="https://formspree.io/zhitkov100@gmail.com" method="POST"">
       <div class="form-field col x-50">
          <input name="name" id="inputName" class="input-text js-input" type="text" required>
          <label class="label" for="name">Имя</label>
@@ -196,30 +196,6 @@
      $(this).removeClass('not-empty');
   }
 });
-(function() {
-  $(document).ready(function() {
-    return $('#contact-form').submit(function(e) {
-      var email, message, name;
-      name = document.getElementById('inputName');
-      email = document.getElementById('inputEmail');
-      message = document.getElementById('inputMessage');
-      if (!name.value || !email.value || !message.value) {
-        return false;
-      } else {
-        $.ajax({
-          method: 'POST',
-          url: '//formspree.io/zhitkov100@gmail.com',
-          data: $('#contact-form').serialize(),
-          datatype: 'json'
-        });
-        e.preventDefault();
-        $(this).get(0).reset();
-        return alert('Message sent');
-      }
-    });
-  });
-
-}).call(this);
 </script>
 </body>
 </html>
