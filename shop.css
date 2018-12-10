@@ -1,0 +1,107 @@
+@-webkit-keyframes animation{from{opacity:0;} to{ }}
+
+.cloth{
+  display: grid;
+  grid-template-areas:
+    "prime-img desk"
+    /*"text text"*/
+    "grid-img button"
+    "button2 button2";
+  width: 78vw;
+  height: 80vh;
+  padding: 15vh 20vw;
+}
+@media (max-width: 666px){
+  .cloth{
+    margin: 11vh 0;
+  }
+  .text{
+      margin-left: 0;
+  }
+  .shop{
+    -webkit-justify-content: flex-start;
+            justify-content: flex-start;
+  }
+}
+/*.text{
+  grid-area: text;
+  text-align: left;
+  margin-left: 50px;
+  
+}*/
+.desk{
+  grid-area: desk;
+  min-width: 20vw;
+}
+.prime-img{
+  grid-area: prime-img;
+  object-fit: cover;
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+  margin: 0 10%;
+}
+img{
+  max-width: 300px;
+}
+.grid-img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover
+  }
+.button{
+  grid-area: button;
+}
+.button2{
+  grid-area: button2;
+}
+.centr{
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-self: center;
+          align-self: center;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      
+}
+.grid-img-container{
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  -webkit-justify-content: center;
+          justify-content: center;
+  grid-gap: 1rem;
+  margin: 10px;
+}
+.grid-prime-container{
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(3, 400px);
+  -webkit-justify-content: center;
+          justify-content: center;
+  grid-gap: 1rem;
+  margin: 15vh auto;
+  width: 100vw;
+  height: 100vh;
+}
+.grid-prime-container > a > img{
+  width: 70%;
+}
+.grid-prime-container > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.get-in-touch{
+  margin: 0 25vh;
+}
+body{
+    -webkit-animation:animation ease 1s;animation-delay:1s;animation-fill-mode:backwards;
+    overflow-y: hidden;
+}
