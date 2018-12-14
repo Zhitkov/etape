@@ -103,5 +103,4 @@ img{
 }
 body{
     -webkit-animation:animation ease 1s;animation-delay:1s;animation-fill-mode:backwards;
-    overflow-y: hidden;
 }
