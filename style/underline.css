@@ -32,3 +32,12 @@ span > a:hover:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
       }
+      h2{
+            margin: 0;
+    font-weight: 400;
+      }
+@media (max-width: 700px){
+  h2{
+    font-size: 15px
+  }
+}

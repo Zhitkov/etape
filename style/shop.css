@@ -85,7 +85,7 @@ img{
   -webkit-justify-content: center;
           justify-content: center;
   grid-gap: 1rem;
-  margin: 15vh auto;
+  margin: 25vh auto;
   width: 100vw;
   height: 100vh;
 }
@@ -103,4 +103,5 @@ img{
 }
 body{
     -webkit-animation:animation ease 1s;animation-delay:1s;animation-fill-mode:backwards;
+    /*overflow-y: hidden;*/
 }
