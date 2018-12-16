@@ -99,7 +99,7 @@ canvas{
   grid-template-areas: 
     "text-1 video-1 text-3"
     ". text-2 .";
-  margin: 20vh 5vw;
+  margin: 30vh 5vw;
 }
 @media (max-width: 800px){
     .brand-info{
